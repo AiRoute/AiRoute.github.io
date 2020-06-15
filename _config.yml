@@ -1,0 +1,136 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: https://AiRoute.github.io
+date_format: "ordinal"
+title: Ai路线图
+subtitle: "公众号：Ai路线图"
+description: "组织首页，公众号：Ai路线图"
+keywords: 人工智能, 机器学习, 大数据, 图像处理, 程序员
+timezone: Asia/Shanghai
+encoding: "utf-8"
+side_bar_repo_limit: 5
+repository: AiRoute/AiRoute.github.io
+# 对 css 和 js 资源的 cdn 加速配置
+cdn:
+    jsdelivr:
+        enabled: true
+# 组件配置
+components:
+    # 分享
+    share:
+        enabled: false
+    # 不蒜子访问统计
+    busuanzi:
+        enabled: true
+        start_date: 2020-05-03
+# 压缩页面内容
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
+# 文章字数统计
+word_count:
+    enabled: true
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: AiRoute
+organization: AiRoute
+organization_url: AiRoute.github,io
+github_username: AiRoute
+location: Wuhu, China
+email: AiRoute@163.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /categories/
+    label: 分类
+
+#   -
+#     href: /archives/
+#     label: 归档
+
+#   -
+#     href: /open-source/
+#     label: 开源
+
+  -
+    href: /wiki/
+    label: 维基
+
+  -
+    href: /links/
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 10
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+plugins:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: hiszm
+    repo: AiRoute
+    clientID: 0fc88ee5271a40d6409e
+    clientSecret: 89abee09d75e343ce046aca1fc6109dd04dcaffe
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : false
+
+# ---------------- #
+#      Search      #
+# ---------------- #
+simple_jekyll_search:
+    # 是否支持全文搜索
+    fulltext: false
+    # 最多显示多少条搜索结果
+    limit: 10
+
+
+
