@@ -5,8 +5,8 @@ baseurl:
 url: https://AiRoute.github.io
 date_format: "ordinal"
 title: Ai路线图
-subtitle: "公众号：Ai路线图"
-description: "组织首页，公众号：Ai路线图"
+subtitle: "Ai路线图"
+description: "组织首页，Ai路线图"
 keywords: 人工智能, 机器学习, 大数据, 图像处理, 程序员
 timezone: Asia/Shanghai
 encoding: "utf-8"
